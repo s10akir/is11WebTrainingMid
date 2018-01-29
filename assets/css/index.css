@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 
+/* オプションはアルファベット昇順 */
+
 html, body, article {
     height: 100%;
     width: 100%;
@@ -11,32 +13,27 @@ html {
 }
 
 header {
+    background: rgba(0, 0, 0, 0.6);
     height: 70px;
-    width: 100%;
     position: fixed;
     top: 0;
-
-    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
 }
 
 header h1 {
     color: white;
-
     margin: 0 10px;
-
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 
 article {
-    text-align: center;
-
-    overflow: hidden;
-
     height: calc(100% - 80px);
-    width: calc(100% - 80px);
+    overflow: hidden;
     padding: 70px 40px 10px 40px;
+    text-align: center;
+    width: calc(100% - 80px);
 }
 
 img, table {
@@ -46,14 +43,14 @@ img, table {
 table {
     border: solid 2px #000;
     border-collapse: collapse;
-    text-align: left;
     margin: auto;
+    text-align: left;
 }
 
 th, td {
-    padding: 10px;
-    border-top: solid 1px #000;
     border-left: dashed 1px #000;
+    border-top: solid 1px #000;
+    padding: 10px;
 }
 
 #top-catch {
@@ -63,9 +60,8 @@ th, td {
 }
 
 #content2 {
-    padding-bottom: 70px;
-
     height: auto;
+    padding-bottom: 70px;
 }
 
 #logo {
@@ -85,8 +81,8 @@ th, td {
 }
 
 .container {
-    padding: 20px 0;
     letter-spacing: -1em;
+    padding: 20px 0;
 }
 
 .container + .container {
@@ -94,16 +90,16 @@ th, td {
 }
 
 .half {
-    width: 50%;
     display: inline-block;
     letter-spacing: normal;
     vertical-align: middle;
+    width: 50%;
 }
 
 .wire-button {
-    font-weight: bold;
     background: none;
     border: solid 2px #fff;
     color: #fff;
+    font-weight: bold;
     padding: 10px;
 }
